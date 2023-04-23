@@ -1,4 +1,3 @@
-CREATE DATABASE EF;
 USE crud;
 
 SELECT name FROM sys.databases;

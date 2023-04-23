@@ -13,7 +13,10 @@ namespace crud.Controllers
         
         public IActionResult Index()
         {
-            return View();
+            var usuarios = _context.ObtenerUsuarios().ToList();
+            return View(usuarios);
         }
+        
+    
     }
 }
