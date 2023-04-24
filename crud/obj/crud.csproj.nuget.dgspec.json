@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pramos12_ucol\\Desktop\\crud-c#\\crud\\crud.csproj": {}
+    "C:\\Users\\incon\\OneDrive\\Escritorio\\crud-c#\\crud\\crud.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pramos12_ucol\\Desktop\\crud-c#\\crud\\crud.csproj": {
+    "C:\\Users\\incon\\OneDrive\\Escritorio\\crud-c#\\crud\\crud.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pramos12_ucol\\Desktop\\crud-c#\\crud\\crud.csproj",
+        "projectUniqueName": "C:\\Users\\incon\\OneDrive\\Escritorio\\crud-c#\\crud\\crud.csproj",
         "projectName": "crud",
-        "projectPath": "C:\\Users\\pramos12_ucol\\Desktop\\crud-c#\\crud\\crud.csproj",
-        "packagesPath": "C:\\Users\\pramos12_ucol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pramos12_ucol\\Desktop\\crud-c#\\crud\\obj\\",
+        "projectPath": "C:\\Users\\incon\\OneDrive\\Escritorio\\crud-c#\\crud\\crud.csproj",
+        "packagesPath": "C:\\Users\\incon\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\incon\\OneDrive\\Escritorio\\crud-c#\\crud\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\pramos12_ucol\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\incon\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
