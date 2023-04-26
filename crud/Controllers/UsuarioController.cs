@@ -26,7 +26,7 @@ namespace crud.Controllers
         [HttpPost]
         public IActionResult Crear(Usuario usuario)
         {
-            if (ModelState.IsValid && usuario.Nombre is not null && usuario.Apellido is not null && usuario.Email is not null && usuario.Edad > 0)
+            if (ModelState.IsValid && usuario.Nombre is not null && usuario.Apellido is not null && !string.IsNullOrEmpty(usuario.Email) && usuario.Edad > 0)
             {
                 _context.CrearUsuario(usuario.Nombre, usuario.Apellido,  usuario.Email, usuario.Edad);
                 return RedirectToAction("Index");
@@ -43,7 +43,7 @@ namespace crud.Controllers
         [HttpPost]
         public IActionResult Actualizar(Usuario usuario)
         {
-            if (ModelState.IsValid && usuario.Nombre is not null && usuario.Apellido is not null && usuario.Email is not null && usuario.Id_Usuario > 0 && usuario.Edad > 0)
+            if (ModelState.IsValid && !string.IsNullOrEmpty(usuario.Email) && usuario.Nombre is not null && usuario.Apellido is not null && usuario.Id_Usuario > 0 && usuario.Edad > 0)
             {
                 _context.ActualizarUsuario(usuario.Id_Usuario, usuario.Nombre, usuario.Apellido, usuario.Email, usuario.Edad);
                 return RedirectToAction("Index");

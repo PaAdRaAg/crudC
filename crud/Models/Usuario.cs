@@ -11,8 +11,9 @@ namespace crud.Models
         
         [Required(ErrorMessage = "El apellido es requerido.")]
         public string? Apellido { get; set; }
-        
+
         [Required(ErrorMessage = "El email es requerido.")]
+        [EmailAddress]
         public string? Email { get; set; }
 
         [Required(ErrorMessage = "La edad es requerida y no acepta valores negativos.")]
