@@ -28,12 +28,11 @@ namespace crud.Controllers
         {
             if (ModelState.IsValid && usuario.Nombre is not null && usuario.Apellido is not null && usuario.Email is not null)
             {
-                _context.CrearUsuario(usuario.Nombre, usuario.Apellido, usuario.Email, usuario.Edad);
+                _context.CrearUsuario(usuario.Nombre, usuario.Apellido,  usuario.Email, usuario.Edad);
                 return RedirectToAction("Index");
             }
             return View();
         }
-
 
         public IActionResult Actualizar(int id)
         {
@@ -44,7 +43,7 @@ namespace crud.Controllers
         [HttpPost]
         public IActionResult Actualizar(Usuario usuario)
         {
-            if (ModelState.IsValid && usuario.Nombre is not null && usuario.Email is not null && usuario.Id_Usuario > 0)
+            if (ModelState.IsValid && usuario.Nombre is not null && usuario.Apellido is not null && usuario.Email is not null && usuario.Id_Usuario > 0)
             {
                 _context.ActualizarUsuario(usuario.Id_Usuario, usuario.Nombre, usuario.Apellido, usuario.Email, usuario.Edad);
                 return RedirectToAction("Index");

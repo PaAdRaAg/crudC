@@ -18,8 +18,9 @@ namespace crud.Data
             builder.Entity<Usuario>().Property(u => u.Id_Usuario).HasColumnName("Id_Usuario");
             builder.Entity<Usuario>().Property(u => u.Nombre).HasColumnName("Nombre");
             builder.Entity<Usuario>().Property(u => u.Apellido).HasColumnName("Apellido");
-            builder.Entity<Usuario>().Property(u => u.Edad).HasColumnName("Edad");
             builder.Entity<Usuario>().Property(u => u.Email).HasColumnName("Email");
+            builder.Entity<Usuario>().Property(u => u.Edad).HasColumnName("Edad");
+
         }
 
         public List<Usuario> ObtenerUsuarios()
