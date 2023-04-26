@@ -18,6 +18,6 @@ CREATE PROCEDURE sp_obtener_usuario @Id_Usuario INT AS BEGIN SELECT * FROM Usuar
 
 CREATE PROCEDURE sp_insertar_usuario @Nombre VARCHAR(50), @Apellido VARCHAR(50), @Email VARCHAR(50), @Edad INT AS BEGIN INSERT INTO Usuarios VALUES(@Nombre, @Apellido, @Email, @Edad) END;
 
-CREATE PROCEDURE sp_actualizar_usuario @Id_Usuario INT, @Nombre VARCHAR(50), @Apellido VARCHAR(50),  @Email VARCHAR(50), @Edad INT AS BEGIN UPDATE Usuarios SET Nombre = @Nombre, Apellido = @Apellido, Email = @Email, Edad = @Edad WHERE Id_Usuario = @Id_Usuario END;
+CREATE PROCEDURE sp_actualizar_usuario @Id_Usuario INT, @Nombre VARCHAR(50), @Apellido VARCHAR(50), @Email VARCHAR(50), @Edad INT AS BEGIN UPDATE Usuarios SET Nombre = @Nombre, Apellido = @Apellido, Email = @Email, Edad = @Edad WHERE Id_Usuario = @Id_Usuario END;
 
 CREATE PROCEDURE sp_eliminar_usuario @Id_Usuario INT AS BEGIN DELETE FROM Usuarios WHERE Id_Usuario = @Id_Usuario END;
