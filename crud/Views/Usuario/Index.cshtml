@@ -13,8 +13,8 @@
                 <tr>
                     <th>Nombre</th>
                     <th>Apellido</th>
-                    <th>Edad</th>
                     <th>Correo</th>
+                    <th>Edad</th>
                     <th>Acciones</th>
                 </tr>
             </thead>
@@ -24,8 +24,8 @@
                     <tr>
                         <td>@Html.DisplayFor(modelItem=>usuario.Nombre)</td>
                         <td>@Html.DisplayFor(modelItem=>usuario.Apellido)</td>
-                        <td>@Html.DisplayFor(modelItem=>usuario.Edad)</td>
                         <td>@Html.DisplayFor(modelItem=>usuario.Email)</td>
+                        <td>@Html.DisplayFor(modelItem=>usuario.Edad)</td>
                         <td>
                             <a class="btn btn-primary" asp-action="Actualizar" asp-route-id="@usuario.Id_Usuario">Actualizar</a>
                             <a class="btn btn-danger" asp-action="Eliminar" asp-route-id="@usuario.Id_Usuario">Eliminar</a>

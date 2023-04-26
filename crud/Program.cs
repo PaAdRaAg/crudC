@@ -1,7 +1,14 @@
+using Microsoft.EntityFrameworkCore;
+using crud.Data;
+using crud.Controllers;
+using crud.Models;
+using Microsoft.AspNetCore.Builder;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<DbCon>(option => option.UseSqlServer(builder.Configuration.GetConnectionString("conexion")));
 
 var app = builder.Build();
 

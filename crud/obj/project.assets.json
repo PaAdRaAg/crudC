@@ -3186,11 +3186,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\incon\\OneDrive\\Escritorio\\crud-c#\\crud\\crud.csproj",
+      "projectUniqueName": "c:\\Users\\incon\\OneDrive\\Escritorio\\crud-c#\\crud\\crud.csproj",
       "projectName": "crud",
-      "projectPath": "C:\\Users\\incon\\OneDrive\\Escritorio\\crud-c#\\crud\\crud.csproj",
+      "projectPath": "c:\\Users\\incon\\OneDrive\\Escritorio\\crud-c#\\crud\\crud.csproj",
       "packagesPath": "C:\\Users\\incon\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\incon\\OneDrive\\Escritorio\\crud-c#\\crud\\obj\\",
+      "outputPath": "c:\\Users\\incon\\OneDrive\\Escritorio\\crud-c#\\crud\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\incon\\AppData\\Roaming\\NuGet\\NuGet.Config"

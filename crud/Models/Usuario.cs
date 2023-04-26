@@ -1,11 +1,26 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace crud.Models
 {
     public class Usuario
     {
         public int Id_Usuario { get; set; }
-        public string? Nombre { get; set; }
-        public string? Apellido { get; set; }
+        
+        [Required(ErrorMessage = "El nombre es requerido.")]
+        public string Nombre { get; set; } = "";
+        
+        [Required(ErrorMessage = "El apellido es requerido.")]
+        public string Apellido { get; set; } = "";
+        
+        [Required(ErrorMessage = "La edad es requerida.")]
         public int Edad { get; set; }
-        public string? Email { get; set; }
+        
+        [Required(ErrorMessage = "El email es requerido.")]
+        public string Email { get; set; }
+        
+        public Usuario()
+        {
+            Email = "";
+        }
     }
 }
